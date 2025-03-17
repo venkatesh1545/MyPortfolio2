@@ -1,10 +1,10 @@
 <?php
 // Database connection credentials
-$host = "nozomi.proxy.rlwy.net";  // Remote MySQL host
-$user = "root";                   // MySQL username
-$password = "LRmCiBUWwmmERCWTEUaDjoVJuddRHZGz"; // MySQL password
-$database = "railway";            // Default database name
-$port = 42174;                    // MySQL port
+$host = getenv("DB_HOST");
+$user = getenv("DB_USER");
+$password = getenv("DB_PASSWORD");
+$database = getenv("DB_NAME");
+$port = getenv("DB_PORT");
 
 
 // Create connection
